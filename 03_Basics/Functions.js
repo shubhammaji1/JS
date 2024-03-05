@@ -26,4 +26,20 @@ function userlogged(username){
     return`${username} just logged in`
 } 
 // console.log(userlogged("Shubham"))
-console.log(userlogged())
+// console.log(userlogged())
+
+function calculate(val1,val2,...num1){
+    return num1
+}
+
+// console.log(calculate(2,3,5,600,522))
+
+const user ={
+    name: "Shubham",
+    roll: 121
+}
+
+function handleObjects(anyobject){
+    console.log(`Name is ${anyobject.name} and rollNo is ${anyobject.roll}`)
+}
+// handleObjects(user)
