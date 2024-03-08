@@ -22,13 +22,13 @@ const user={
 // }
 // chai()
 
-const chai = () => {
-        const username = "shubham"
-                console.log(this);
-}
-chai()
+// const chai = () => {
+//         const username = "shubham"
+//                 console.log(this);
+// }
+// chai()
 
 // const sum =(num1,num2)=> num1+num2
-// const sum =(num1,num2)=> (num1+num2)
-const sum =(num1,num2)=> ({user:"Shubham"})
+const sum =(num1,num2)=> (num1+num2)
+// const sum =(num1,num2)=> ({user:"Shubham"})
 console.log(sum(2,3))
