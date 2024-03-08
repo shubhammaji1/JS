@@ -22,7 +22,12 @@ const myObj ={
     'Email' : "abc@gmail.com"
 }
 
-for (const [key,value] of myObj) {
-    console.log(i)
-}
+// for (const [key,value] of myObj) {
+    // console.log(i)
+// }
 
+const arr1 =["A","B","C","D","E"]
+
+for (const key of arr1) {
+    console.log(key);
+    }
