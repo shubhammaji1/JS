@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLang(langname){
+        const li = document.createElement('li');
+        li.innerHTML = `${langname}`;
+        document.querySelector('.language').appendChild(li);
+
+    }
+    addLang("python")
+    addLang("R")
+
+    function addOptiLang(langname) {
+       const li =  document.createElement('li');
+       li.appendChild(document.createTextNode(langname))
+       document.querySelector('.language').appendChild(li)
+    }
+    addOptiLang("Java")
+
+    // ................Edit
+
+    const secChild = document.querySelector("li:nth-child(2)")
+    //secChild.innerHTML= "DOM"
+    const replang = document.createElement('li');
+    replang.textContent = "MOJO"
+    secChild.replaceWith(replang)
+
+    const firstchild = document.querySelector("li:nth-child(1)")
+    // const rep = document.createElement("li")
+    // rep.textContent ="TypeScript"
+    // firstchild.replaceWith(rep)
+    firstchild.outerHTML = '<li>TypeScrpt</li>'
+
+    const lastchild = document.querySelector('li:last-child')
+    lastchild.remove();
+
+</script>
+</html>
