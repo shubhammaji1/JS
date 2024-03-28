@@ -1,0 +1,36 @@
+html{
+    margin: 0;
+}
+span{
+    display: block;
+}
+
+.button{
+    height: 100px;
+    width: 100px;
+    border: solid black 2px;
+    margin: 5px;
+}
+h1,h2{
+    text-align: center;
+}
+
+.canvas{
+    margin: 100px auto 100px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+}
+#grey {
+    background: grey;
+      }
+#white {
+    background: white;
+        }
+#blue {
+    background: blue;
+          }
+#yellow {
+    background: yellow;
+     }
