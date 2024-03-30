@@ -58,19 +58,28 @@ const promiseFour = new Promise(function (resolve, reject) {
   setTimeout(function () {
     let error = true;
     if (!error) {
-      resolve({ username: "JS", password : "123"});
+      resolve({ username: "JS", password: "123" });
     } else {
       reject("Error of JS");
     }
   }, 1000);
 });
 
-async function consumePromiseFive(){
-    try {
-        const res = await promiseFour
-        console.log(res)
-    } catch (error) {
-        console.log(error);
-    }
+async function consumePromiseFive() {
+  try {
+    const res = await promiseFour
+    console.log(res)
+  } catch (error) {
+    console.log(error);
+  }
 }
 consumePromiseFive()
+
+fetch('https://api.github.com/users/hiteshchoudhary')
+  .then((response) => {
+    return response.json()
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => console.log(error))
