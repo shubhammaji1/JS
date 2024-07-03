@@ -1,53 +1,73 @@
-//nullish coaleshing operator(??)
+// //nullish coaleshing operator(??)
 
-let myval=0;
-const myNumber = myval || 10;
-const myNumber2 = myval ?? 10;
-
-
-console.log(myNumber);
-console.log(myNumber2);
-
-// union and Intersection
+// let myval=0;
+// const myNumber = myval || 10;
+// const myNumber2 = myval ?? 10;
 
 
-let arr1 =[1,2,3,4];
-let arr2 = [3,4,5,6];
+// console.log(myNumber);
+// console.log(myNumber2);
 
-const Intersection=arr1.filter((curr)=>{
-    return arr2.includes(curr);
+// // union and Intersection
 
-});
 
-const Union = [...new Set([...arr1,...arr2])]; // Set is used to remove Duplicate Values
+// let arr1 =[1,2,3,4];
+// let arr2 = [3,4,5,6];
 
-console.log(Intersection);
-console.log(Union);
+// const Intersection=arr1.filter((curr)=>{
+//     return arr2.includes(curr);
 
-// Remove Null and Undefined Values
+// });
 
-const obj ={
-    a:1,
-    b:null,
-    c:undefined,
-    d:'hii'
-};
+// const Union = [...new Set([...arr1,...arr2])]; // Set is used to remove Duplicate Values
 
-const newObj = Object.entries(obj).filter(([_,val])=>val!=null);
+// console.log(Intersection);
+// console.log(Union);
 
-console.log(newObj);
+// // Remove Null and Undefined Values
 
-//loggedNumbers
+// const obj ={
+//     a:1,
+//     b:null,
+//     c:undefined,
+//     d:'hii'
+// };
 
-const loggedNumbers =()=>{
-    console.log(1);
-    setTimeout(() => {
-        console.log(2)
-    }, 1000);
-    setTimeout(() => {
-        console.log(3)
-    }, 0);
-    console.log(4)
-};
+// const newObj = Object.entries(obj).filter(([_,val])=>val!=null);
 
-loggedNumbers();
+// console.log(newObj);
+
+// //loggedNumbers
+
+// const loggedNumbers =()=>{
+//     console.log(1);
+//     setTimeout(() => {
+//         console.log(2)
+//     }, 1000);
+//     setTimeout(() => {
+//         console.log(3)
+//     }, 0);
+//     console.log(4)
+// };
+
+// loggedNumbers();
+
+// // Asynsc 
+// function Call(){
+//     return new Promise(()=>{
+//         setTimeout(() => {
+//             console.log("Hello");
+//         }, 3000);
+//     });
+// }
+
+// async function asynccall(){
+//     console.log("Hii")
+//     const result = await Call();
+//     console.log(result);
+// }
+
+// asynccall();
+
+
+
