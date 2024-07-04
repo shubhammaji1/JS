@@ -24,3 +24,11 @@ console.log(findVowels("brrppp"));
 let arr = [[1,2],[0,5],[7,8]]
 const Arr = arr.reduce((prev,curr)=> prev.concat(curr),[] );
 console.log(Arr);
+
+
+const res = Array.from({length:10},(v,i)=>i);
+console.log(res);
+
+
+const inArr =['1','2','3'].map(parseInt);
+console.log(inArr);
