@@ -19,3 +19,8 @@ const findVowels=(str)=>{
 console.log(findVowels("Hello World"));
 console.log(findVowels("thE brOwen fOx"));
 console.log(findVowels("brrppp"));
+
+
+let arr = [[1,2],[0,5],[7,8]]
+const Arr = arr.reduce((prev,curr)=> prev.concat(curr),[] );
+console.log(Arr);
