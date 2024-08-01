@@ -32,3 +32,20 @@ console.log(res);
 
 const inArr =['1','2','3'].map(parseInt);
 console.log(inArr);
+
+//Next
+
+var myObj = {
+    foo: "Bar",
+    func: function () {
+        var self = this;
+        console.log("outer"+this.foo);
+        console.log("outer"+self.foo);
+        (function(){
+            console.log("inner"+this.foo);
+            console.log("inner"+self.foo);
+        }());
+        
+    }
+};
+myObj.func();
