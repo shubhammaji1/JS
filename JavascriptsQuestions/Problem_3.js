@@ -17,7 +17,10 @@ const countChar =(word,char)=>{
     
 
 }
-
-
-
 console.log(countChar("MissIssippi","I"));
+
+
+
+
+
+
